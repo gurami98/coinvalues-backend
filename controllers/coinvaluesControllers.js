@@ -13,7 +13,7 @@ const getCoins = async (req, res) => {
         })
         res.status(200).send(response.data)
     }catch(e){
-        res.send(401).send('Error fetching data')
+        res.status(401).send('Error fetching data')
     }
 }
 
